@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  chromadb:
+    image: ghcr.io/chroma-core/chroma:latest
+    volumes:
+      - ./data/vectors:/chroma/data
+    environment:
+      - CHROMA_DB_IMPL=duckdb+parquet
+    ports:
+      - "8000:8000"
+
+  redis:
+    image: redis:alpine
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+
+  rag_app:
+    build: .
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./rag_metadata.db:/app/rag_metadata.db
+    environment:
+      - CHROMA_HOST=chromadb
+      - REDIS_HOST=redis
+    depends_on:
+      - chromadb
+      - redis
+    ports:
+      - "8080:8080"
+
+volumes:
+  redis_data:

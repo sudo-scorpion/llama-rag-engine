@@ -1,0 +1,26 @@
+# Development Configuration
+app:
+  name: llama-rag
+  version: 0.1.0
+  environment: development
+
+vector_store:
+  backend: chromadb
+  settings:
+    chroma_db_impl: duckdb+parquet
+    persist_directory: data/vectors
+
+llm:
+  model: llama-2-3b
+  model_path: models/llama
+  max_tokens: 2048
+  temperature: 0.7
+
+document_processor:
+  chunk_size: 500
+  chunk_overlap: 50
+  max_documents: 1000
+
+cache:
+  backend: redis
+  ttl: 3600
