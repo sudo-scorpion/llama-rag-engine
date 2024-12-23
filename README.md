@@ -1,9 +1,8 @@
-```markdown
 # LLaMA RAG System
 
 A Retrieval-Augmented Generation (RAG) system using the LLaMA model and ChromaDB.
 
-![LLaMA RAG System](./data/images/design.png)
+![LLaMA RAG Engine](./data/images/design.png)
 
 
 ## Table of Contents
@@ -219,4 +218,3 @@ We welcome contributions to the LLaMA RAG System! If you have any ideas, suggest
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
