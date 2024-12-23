@@ -1,5 +1,5 @@
 from fastapi import APIRouter, File, UploadFile, HTTPException, Depends
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 from ..dependencies import get_rag_system, verify_auth
 import os
 from loguru import logger

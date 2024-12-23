@@ -1,5 +1,5 @@
 from fastapi import Depends, Request
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 
 async def get_rag_system(request: Request) -> RAGEngine:
     return request.app.state.rag_engine

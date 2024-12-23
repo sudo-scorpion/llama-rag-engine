@@ -35,7 +35,7 @@ ENV/
 
 # Project specific  
 .env
-data/documents/*
+# data/documents/*
 data/processed/*
 data/vectors/*
 models/llama/*

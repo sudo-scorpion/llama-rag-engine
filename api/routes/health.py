@@ -1,6 +1,6 @@
 # api/routes/health.py
 from fastapi import APIRouter, Depends
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 from api.dependencies import get_rag_system
 
 router = APIRouter(prefix="/health", tags=["health"])

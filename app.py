@@ -11,7 +11,7 @@ import uvicorn
 from api.routes import documents, questions, metrics, health
 from core.events.handlers import cleanup_resources
 from core.events.watchers import DocumentWatcher
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 from watchdog.observers import Observer
 from security.security import SecurityConfig
 

@@ -2,7 +2,7 @@ import asyncio
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from core.logger.app_logger import logger
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 
 class DocumentWatcher(FileSystemEventHandler):
     def __init__(self, directory: str, rag_engine: RAGEngine):

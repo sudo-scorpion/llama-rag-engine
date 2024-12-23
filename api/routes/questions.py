@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from core.models.question_response import QuestionResponse
 from core.models.question_request import QuestionRequest
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 from api.dependencies import get_rag_system, verify_auth
 from loguru import logger
 

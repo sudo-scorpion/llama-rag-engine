@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from core.rag.llama_rag import RAGEngine
+from core.rag.rag_engine import RAGEngine
 from api.dependencies import get_rag_system, verify_auth
 from core.models.metrics_response import MetricsResponse
 from loguru import logger
