@@ -57,7 +57,7 @@ class ApplicationSupervisor:
             
             # Start the application with reload enabled
             self.process = subprocess.Popen(
-                [sys.executable, "main.py"],
+                [sys.executable, "app.py"],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 env=env,
