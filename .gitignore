@@ -33,7 +33,7 @@ ENV/
 *.swp
 *.swo
 
-# Project specific
+# Project specific  
 .env
 data/documents/*
 data/processed/*
