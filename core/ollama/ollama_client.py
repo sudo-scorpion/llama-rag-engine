@@ -6,8 +6,7 @@ from pydantic import BaseModel, Field
 import os
 import json
 from enum import Enum
-
-logger = logging.getLogger(__name__)
+from core.logger.app_logger import logger
 
 class OllamaModelConfig(BaseModel):
     """Configuration for Ollama model settings"""

@@ -4,7 +4,7 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     # Project configuration
-    PROJECT_NAME: str = "rag-system"
+    PROJECT_NAME: str = "llama-rag-engine"
     VERSION: str = "0.1.0"
     API_V1_STR: str = "/api/v1"
     DEBUG: bool = False
@@ -25,7 +25,6 @@ class Settings(BaseSettings):
     OLLAMA_MODEL: str = "llama2:3b"
     MAX_TOKENS: int = 2048
     TEMPERATURE: float = 0.7
-    SYSTEM_CONTEXT: str = "You are a helpful assistant that answers questions based on the provided documents."
     
     # Vector Store
     VECTOR_DIMENSION: int = 768
