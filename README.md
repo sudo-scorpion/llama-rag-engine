@@ -1,6 +1,6 @@
-# LLaMA RAG System
+# LLaMA RAG Engine
 
-A Retrieval-Augmented Generation (RAG) system using the LLaMA model and ChromaDB.
+A Retrieval-Augmented Generation (RAG) engine using the LLaMA model and ChromaDB.
 
 ![LLaMA RAG Engine](./data/images/design.png)
 
