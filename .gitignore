@@ -41,6 +41,11 @@ data/vectors/*
 models/llama/*
 *.db
 *.sqlite3
+*.bin
+*.pickle
+*.pkl
+*.pdf
+*.cromadb
 
 # Logs
 *.log

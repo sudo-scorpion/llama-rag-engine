@@ -3,6 +3,9 @@
 
 A Retrieval-Augmented Generation (RAG) system using the LLaMA model and ChromaDB.
 
+![LLaMA RAG System](./data/images/design.png)
+
+
 ## Table of Contents
 
 - [Setup](#setup)
