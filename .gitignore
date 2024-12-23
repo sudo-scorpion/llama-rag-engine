@@ -22,7 +22,9 @@ wheels/
 *.egg
 
 # Virtual Environment
+.venv/
 venv/
+rag-venv/
 ENV/
 
 # IDE
