@@ -44,7 +44,6 @@ models/llama/*
 *.bin
 *.pickle
 *.pkl
-*.pdf
 *.cromadb
 
 # Logs
